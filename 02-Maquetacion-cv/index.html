@@ -3,10 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <title>Mi Curriculum Vitae | Portafolio</title>
+    <style>
+        /* CONFIGURACIÓN DE COLORES Y ESTILO */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: #ffffff; /* Blanco */
+            color: #333;
+        }
+
+        header {
+            background-color: #000000; /* Negro */
+            color: #e0b0ff; /* Lila claro */
+            padding: 2rem;
+            text-align: center;
+            border-bottom: 5px solid #a64dff; /* Lila más fuerte */
+        }
+
+        .foto-perfil {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%; /* Hace la imagen circular */
+            border: 3px solid #a64dff;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        nav {
+            background-color: #1a1a1a;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #e0b0ff;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #000;
+            border-left: 5px solid #a64dff;
+            padding-left: 10px;
+        }
+        footer {
+            background-color: #000;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
 </head>
 <body>
 
     <header>
+        <img src="file:///C:/Users/georg/Downloads/IMG_20250403_091746_075.webp" alt="Mi Foto de Perfil" class="foto-perfil">
         <h1>Georgina Cruz</h1>
         <nav>
             <ul>
@@ -17,38 +80,136 @@
         </nav>
     </header>
 
-    <main>
-        <section id="perfil">
-            <h2>Perfil Profesional</h2>
-            <p>Estudiante apasionado por crear cosas nuevas aunque no sea tan buena haciendolo. Intentando que cada dia, cada proyecto sea uno de los mejores o que sea uno de los mas creativos</p>
-        </section>
+  <style>
+    /* Estilos específicos para la sección de perfil y tarjetas */
+    .perfil-container {
+        background: linear-gradient(135deg, #1a1a1a 0%, #000000 100%);
+        color: white;
+        padding: 40px;
+        border-radius: 20px;
+        border: 1px solid #a64dff;
+        margin-bottom: 50px;
+        text-align: center;
+    }
 
-        <section id="portafolio">
-            <h2>Mi Portafolio de Proyectos</h2>
-            <p>Haz clic en cada proyecto para ver los detalles técnicos:</p>
-        
-            <article>
+    .perfil-container h2 {
+        color: #e0b0ff;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        border-bottom: 2px solid #a64dff;
+        display: inline-block;
+        padding-bottom: 10px;
+    }
+
+    .perfil-texto {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        max-width: 800px;
+        margin: 20px auto;
+        font-style: italic;
+    }
+
+    /* Contenedor de Proyectos en Grid */
+    .portafolio-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+        margin-top: 30px;
+    }
+
+    .tarjeta-v2 {
+        background-color: #ffffff;
+        border-bottom: 5px solid #a64dff;
+        border-radius: 12px;
+        padding: 25px;
+        text-align: center;
+        transition: all 0.3s ease;
+        text-decoration: none;
+        display: block;
+        color: #000;
+    }
+
+    .tarjeta-v2:hover {
+        background-color: #f3e5ff; /* Lila muy claro al pasar el mouse */
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(166, 77, 255, 0.2);
+    }
+
+    .tarjeta-v2 h3 {
+        margin-top: 0;
+        color: #000;
+        font-size: 1.2rem;
+    }
+
+    .btn-ver {
+        display: inline-block;
+        margin-top: 15px;
+        padding: 8px 20px;
+        background-color: #000;
+        color: #e0b0ff;
+        border-radius: 25px;
+        font-weight: bold;
+        font-size: 0.9rem;
+    }
+
+    footer {
+        background-color: #000;
+        color: #fff;
+        padding: 40px 20px;
+        text-align: center;
+        border-top: 2px solid #a64dff;
+    }
+
+    footer a {
+        color: #e0b0ff;
+        text-decoration: none;
+        font-weight: bold;
+    }
+</style>
+<main>
+    <section id="perfil" class="perfil-container">
+        <h2>Perfil</h2>
+        <p class="perfil-texto">
+            "Exploradora visual dedicada a transformar ideas en realidades creativas. 
+            Mi enfoque se centra en el aprendizaje continuo y la experimentación constante, 
+            buscando que cada proyecto supere al anterior en innovación y calidad estética."
+        </p>
+    </section>
+
+    <section id="portafolio">
+        <h2 style="text-align: center; color: #000; margin-bottom: 10px;">Portafolio de Proyectos</h2>
+        <p style="text-align: center; color: #666; margin-bottom: 40px;">Explora mis últimos trabajos en diseño y arte digital</p>
+    
+        <div class="portafolio-grid">
+            <a href="proyecto-personaje.html" class="tarjeta-v2">
                 <h3>01. Diseño de Personajes</h3>
-                <a href="proyecto-personaje.html">Ver proyecto de personajes</a>
-            </article>
+                <p>Creación de conceptos.</p>
+                <span class="btn-ver">Ver Galería</span>
+            </a>
 
-            <article>
-                <h3>02. Galería de Ilustraciones</h3>
-                <a href="proyecto-ilustracion.html">Ver ilustraciones</a>
-            </article>
+            <a href="proyecto-ilustracion.html" class="tarjeta-v2">
+                <h3>02. Ilustración Digital</h3>
+                <p>Exploración de color y técnicas mixtas.</p>
+                <span class="btn-ver">Ver Galería</span>
+            </a>
 
-            <article>
-                <h3>03.Carteles creados</h3>
-                <a href="proyecto-carteles.html">Ver carteles</a>
-            </article>
-        </section>
-    </main>
+            <a href="proyecto-carteles.html" class="tarjeta-v2">
+                <h3>03. Carteles</h3>
+                <p>Diseño gráfico y comunicación visual.</p>
+                <span class="btn-ver">Ver Galería</span>
+            </a>
 
-    <footer id="contacto">
-        <hr>
-        <p>Ubicación: Ciudad del Carmen, Campeche, México</p>
-        <p>Email: <a href="211212@mail.unacar.mx"></a></p>
-    </footer>
+            <a href="proyecto-fotografias.html" class="tarjeta-v2">
+                <h3>04. Fotografía</h3>
+                <p>Capturando momentos y perspectivas.</p>
+                <span class="btn-ver">Ver Galería</span>
+            </a>
+        </div>
+    </section>
+</main>
 
-</body>
-</html>
+<footer id="contacto">
+    <p>Ubicación: Ciudad del Carmen, Campeche, México</p>
+    <p>Email: <a href="mailto:211212@mail.unacar.mx">211212@mail.unacar.mx</a></p>
+    <p style="font-size: 0.8rem; margin-top: 20px; color: #666;">&copy; 2026 | Diseñado con pasión.</p>
+</footer>

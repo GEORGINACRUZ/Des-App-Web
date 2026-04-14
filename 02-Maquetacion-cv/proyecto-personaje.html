@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle del Proyecto | Portafolio</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            background-color: #000000; /* Fondo negro para resaltar las imágenes */
+            color: #ffffff;
+        }
+
+        header {
+            background-color: #1a1a1a;
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 4px solid #a64dff; /* Línea lila */
+        }
+
+        h1 {
+            color: #e0b0ff; /* Lila claro */
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        nav {
+            padding: 20px;
+        }
+
+        .btn-volver {
+            color: #ffffff;
+            text-decoration: none;
+            border: 1px solid #a64dff;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .btn-volver:hover {
+            background-color: #a64dff;
+        }
+
+        .contenido {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .descripcion-proyecto {
+            background-color: #1a1a1a;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 10px solid #a64dff;
+            margin-bottom: 40px;
+        }
+
+        /* CUADRÍCULA DE IMÁGENES CREATIVA */
+        .galeria-grid {
+            display: grid;
+            /* Crea columnas de al menos 300px que se ajustan solas */
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+            gap: 25px;
+        }
+
+        .item-galeria {
+            background-color: #ffffff;
+            padding: 10px;
+            border-radius: 8px;
+            transition: transform 0.4s ease;
+        }
+
+        .item-galeria:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(166, 77, 255, 0.4);
+        }
+
+        .item-galeria img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 4px;
+        }
+
+        .pie-foto {
+            color: #000;
+            text-align: center;
+            font-size: 0.9rem;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Detalle del Proyecto</h1>
+        <p>Exploración técnica y visual</p>
+    </header>
+
+    <nav>
+        <a href="index.html" class="btn-volver">← Volver al Inicio</a>
+    </nav>
+
+    <main class="contenido">
+        <section class="descripcion-proyecto">
+            <h2>Sobre este trabajo</h2>
+            <p>Muestra de versatilidad técnica en Ilustración y diseño de personajes, que incluye: Semirrealismo
+                : Digitalización estilizada de fotos reales, Concept Art (Gaming): Personajes chibi para videojuegos,
+                Anime 2D: Ilustración con estética de animación japonesa
+            </p>
+        </section>
+        <section class="galeria-grid">
+            <div class="item-galeria">
+                <img src="c:\Users\georg\Downloads\personaje semi realista.png" alt="Vista 1">
+                <p class="pie-foto">Personaje Semirealista</p>
+            </div>
+            <div class="item-galeria">
+                <img src="c:\Users\georg\Downloads\personajes animados de un juego.png.png" alt="Vista 2">
+                <p class="pie-foto">Personaje de un juego animado</p>
+            </div>
+
+            <div class="item-galeria">
+                <img src="c:\Users\georg\Downloads\23 sin título_20241203184029.png" alt="Vista 3">
+                <p class="pie-foto">Mujer acostada animada</p>
+            </div>
+
+            </section>
+    </main>
+
+</body>
+</html>
